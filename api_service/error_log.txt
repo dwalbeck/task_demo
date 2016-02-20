@@ -481,3 +481,362 @@ Array
     [importance] => 3
 )
 
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+4
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+4
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+PUT: 4
+POST PARSE: Array
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+PUT: 4
+POST PARSE: Array
+(
+    [4] => 
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+PUT: 4
+POST PARSE: Array
+(
+    [4] => 
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+PUT: 4
+POST PARSE: Array
+(
+    [4] => 
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+1
+PUT: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+POST PARSE: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+PUT: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+POST PARSE: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+POST CLEAN: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task Array
+(
+    [x] => putTask
+    [task_id] => 4
+)
+1
+UPDATING task 1
+UPDATING task Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task 
+UPDATING task 
+UPDATING task Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task 
+PUT RAW: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+POST PARSE: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+POST CLEAN: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task 
+PUT RAW: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+PUT JSON DECODE: Array
+(
+    [task_id] => 4
+    [parent_task_id] => 
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alert_min] => 15
+    [alarm_set] => t
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_created] => 2016-02-19 17:06:52
+    [task_updated] => 
+    [task_completed] => 
+)
+
+POST PARSE: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+POST CLEAN: Array
+(
+    [{"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay_Bills","task_desc":"Pay_second_half_of_months_bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19_17:06:52","task_updated":null,"task_completed":null}] => 
+)
+
+UPDATING task 
+PUT RAW: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+PUT JSON DECODE: Array
+(
+    [task_id] => 4
+    [parent_task_id] => 
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alert_min] => 15
+    [alarm_set] => t
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_created] => 2016-02-19 17:06:52
+    [task_updated] => 
+    [task_completed] => 
+)
+
+UPDATING task Array
+(
+    [task_id] => 4
+    [parent_task_id] => 
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alert_min] => 15
+    [alarm_set] => t
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_created] => 2016-02-19 17:06:52
+    [task_updated] => 
+    [task_completed] => 
+)
+
+PUT RAW: {"task_id":"4","parent_task_id":null,"category_id":"1","task_name":"Pay Bills","task_desc":"Pay second half of months bills","importance":"7","alert_min":"15","alarm_set":"t","date_due":"2016-02-20","time_due":"23:30:00","task_created":"2016-02-19 17:06:52","task_updated":null,"task_completed":null}
+PUT JSON DECODE: Array
+(
+    [task_id] => 4
+    [parent_task_id] => 
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alert_min] => 15
+    [alarm_set] => t
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_created] => 2016-02-19 17:06:52
+    [task_updated] => 
+    [task_completed] => 
+)
+
+UPDATING task Array
+(
+    [task_id] => 4
+    [parent_task_id] => 
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alert_min] => 15
+    [alarm_set] => t
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_created] => 2016-02-19 17:06:52
+    [task_updated] => 
+    [task_completed] => 
+)
+
+UPDATING data Array
+(
+    [task_updated] => 2016-02-20 11:26:17
+    [category_id] => 1
+    [task_name] => Pay Bills
+    [task_desc] => Pay second half of months bills
+    [importance] => 7
+    [alarm_set] => t
+    [alert_min] => 15
+    [date_due] => 2016-02-20
+    [time_due] => 23:30:00
+    [task_completed] => 
+)
+
+Success 

@@ -56,8 +56,7 @@
 					$this->_request = $this->cleanInput($_GET);
 					break;
 				case "PUT":
-					parse_str(file_get_contents("php://input"), $this->_request);
-					$this->_request = $this->cleanInput($this->_request);
+					$this->_request = json_decode(file_get_contents("php://input"), true);
 					break;
 				default:
 					$this->response('', 406);

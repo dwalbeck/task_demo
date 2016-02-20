@@ -2,10 +2,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 a {
-    color: #E1704B;
+    color: #156BB4;
     transition: color 0.5s ease;
 }
 a:hover{
+    color:#095493;
     cursor:pointer;
 }
 h1{
@@ -23,7 +24,7 @@ div.task label.checkbox{
     font-weight: normal;
 }
 .header-color-blue {
-    background: #307ECC;
+    background: #156BB4;
     border: 1px solid #307ECC;
     box-sizing: content-box;
     position: relative;
@@ -69,4 +70,14 @@ ul > li, a {
     border-radius: 0;
     background: #156BB4;
     color: #fff;
+}
+.navbar-brand .navbar-default {
+    color: #fff;
+}
+a.white {
+    color: #fff;
+}
+a.white:hover {
+    color:#FFF500;
+    text-decoration: underline;
 }

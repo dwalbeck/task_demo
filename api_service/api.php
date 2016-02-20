@@ -30,7 +30,7 @@
 			//fclose($this->log);
 		}
 
-		public function writeLog($message) {
+		public static function writeLog($message) {
 			if (!$log = fopen('/www/avantlink/api_service/error_log.txt', 'a')) { die('Failed to open log file'.getcwd()); }
 			fwrite($log, "$message\n");
 			fclose($log);
@@ -128,11 +128,9 @@
 
 		private function putTask() {
 			if ($this->get_request_method() != "PUT") { $this->response('', 406); }
-			$task = json_decode(file_get_contents("php://input"), true);
-			$this->writeLog('UPDATING task '.print_r($_POST, true).print_r($task, true));
+			$task = $this->_request;
 			if (!$task['task_id']) { $this->response('', 204); return; }
 
-			$this->writeLog('UPDATING task '.print_r($_REQUEST, true).print_r($task, true));
 			$field = array('category_id', 'task_name', 'task_desc', 'importance', 'alarm_set', 'alert_min', 'date_due', 'time_due', 'task_completed');
 			$up = array('task_updated' => date('Y-m-d H:i:s'));
 
@@ -143,7 +141,7 @@
 			}
 			//$query = "UPDATE task SET $up WHERE task_id=".$task['task_id'];
 			if (count($up)) {
-				if ($res = pg_update($this->pgconn, 'task', $up, array('task_id' => $task['task_id']))) { die('Failed to update task'); }
+				if (!$res = pg_update($this->pgconn, 'task', $up, array('task_id' => $task['task_id']))) { die('Failed to update task'); }
 				$success = array('status' => "Success", "msg" => "Task ".$task['task_id']." successfully updated.", "data" => $task);
 				$this->response($this->json($success), 200);
 

@@ -32,10 +32,11 @@ angular.module('myApp', ['ngRoute'])
 			return $http(req);
 		};
 
-		APIService.updateTask = function(task) {
+		APIService.updateTask = function(taskid, task) {
+			console.log('update data', task);
 			var req = {
 				method: 'PUT',
-				url: "/api_service/putTask",
+				url: "/api_service/putTask?task_id="+taskid,
 				headers: { 'content-type': 'application/json' },
 				data: task
 			};
@@ -105,7 +106,7 @@ angular.module('myApp', ['ngRoute'])
 		if (taskID > 0) {
 			APIService.getTask(taskID).then(function(result) {
 				if (result.status === 200) {
-					$scope.task = result.data;
+					$scope.task = result.data[0];
 				} else {
 					alert('Failed to retrieve task information');
 				}
@@ -124,7 +125,8 @@ angular.module('myApp', ['ngRoute'])
 		};
 
 		$scope.saveTask = function (task) {
-			$location.path('/');
+			console.log('TASK VALUES', task);
+			//$location.path('/');
 			if (taskID <= 0) {
 				APIService.insertTask(task);
 			} else {
