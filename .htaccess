@@ -1,0 +1,13 @@
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-s
+#    RewriteRule ^(.*)$ app/api.php?x=$1 [QSA,NC,L]
+
+#    RewriteCond %{REQUEST_FILENAME} -d
+#    RewriteRule ^(.*)$ app/index.html [QSA,NC,L]
+
+#    RewriteCond %{REQUEST_FILENAME} -s
+#    RewriteRule ^(.*)$ app/index.html [QSA,NC,L]
+#</IfModule>

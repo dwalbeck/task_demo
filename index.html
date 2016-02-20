@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-app lang="en">
+<head>
+    <title>Avantlink demo task application</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/task.css" rel="stylesheet">
+
+</head>
+<body ng-controller="TaskController">
+
+    <div class="row">
+        <div class="container">
+            <blockquote><h4><a href="http://avantlink.com/">Avantlink demo task application</a></h4></blockquote>
+            <div class="col-sm-12">
+                <div ng-include src="app/partials/task_list.html"></div>
+                <div ng-view="" id="ng-view"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app/bower_components/angular/angular.min.js"></script>
+    <script src="app/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app/components/version/version.js"></script>
+    <script src="app/components/version/version-directive.js"></script>
+    <script src="app/components/version/interpolate-filter.js"></script>
+
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/underscore/underscore.js"></script>
+
+    <script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>

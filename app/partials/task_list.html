@@ -1,0 +1,61 @@
+<div class="row">
+	<div class="col-md-12" ng-show="tasks.length > 0">
+
+		<nav class= "navbar navbar-default" role= "navigation" >
+			<div class= "navbar-header" >
+				<a class="btn btn-sm btn-success" href="#/edit-task/0"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add new Task</a>
+			</div>
+			<!--<div class="col-sm-3">
+				<button ng-click="addNewClicked=!addNewClicked;" class="btn btn-sm btn-success header-elements-margin"><i class="glyphicon  glyphicon-plus"></i>&nbsp;Add New Task</button>
+			</div> -->
+			<div class="col-sm-3">
+				<input type="text" ng-model="filterTask" class="form-control search header-elements-margin" placeholder="Filter Tasks">
+			</div>
+
+
+		</nav>
+		<div class="widget-body ">
+			<form ng-init="addNewClicked=false; " ng-if="addNewClicked" id="newTaskForm" class="add-task">
+				<div class="form-actions">
+					<div class="input-group">
+						<input type="text" class="form-control" name="comment" ng-model="taskInput" placeholder="Add New Task" ng-focus="addNewClicked">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit" ng-click="addTask(taskInput)"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New Task</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<table class="table table-striped table-bordered" style="width:100%;">
+			<thead>
+				<th></th>
+				<th style="width:200px;">Task Name</th>
+				<th>Description</th>
+				<th style="width:60px;">Alert</th>
+				<th style="width:100px;">Due Date</th>
+				<th style="width:40px;">Level</th>
+				<th style="width:100px;">Created</th>
+				<th style="width:120px;"></th>
+				<th></th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="data in tasks | filter : filterTask">
+					<td><input type="checkbox" value="{{data.task_completed}}" ng-checked="data.task_completed !== null" ng-click="toggleStatus(data.task_id, data.task_completed)"/></td>
+					<td ng-class="{strike:data.task_completed !== null}">{{data.task_name}}</td>
+					<td ng-class="{strike:data.task_completed !== null}">{{data.task_desc}}</td>
+					<td>{{data.alert_min}} min</td>
+					<td>{{data.date_due}} {{data.time_due}}</td>
+					<td class="text-center">{{data.importance}}</td>
+					<td>{{data.task_created}}</td>
+					<td><a href="#/edit-task/{{data.task_id}}" class="btn">&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp; Edit Task</a></td>
+					<td class="text-center"><a ng-click="deleteTask(data.task_id)" class="pull-right"><i class="glyphicon glyphicon-trash"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-12" ng-show="tasks.length === 0">
+		<div class="col-md-12">
+			<h4>No Tasks found</h4>
+		</div>
+	</div>
+</div>

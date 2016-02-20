@@ -1,0 +1,483 @@
+TASK_ID: 0
+TASK_ID: 0 - Array
+(
+    [x] => task
+    [task_id] => 1
+)
+
+TASK_ID: 0 - Array
+(
+    [x] => task
+    [task_id] => 1
+)
+Array
+(
+)
+
+TASK_ID: 1 - Array
+(
+    [x] => task
+    [task_id] => 1
+)
+Array
+(
+)
+
+TASK_ID: 1 - Array
+(
+    [x] => task
+    [task_id] => 1
+)
+Array
+(
+)
+
+Array
+(
+    [0] => Array
+        (
+            [task_id] => 1
+            [parent_task_id] => 
+            [category_id] => 1
+            [task_name] => Walk dog
+            [task_desc] => Daily dog walk with my furry friend
+            [importance] => 5
+            [alert_min] => 15
+            [alarm_set] => t
+            [date_due] => 2016-02-19
+            [time_due] => 23:30:00
+            [task_created] => 2016-02-19 17:06:52
+            [task_updated] => 
+            [task_completed] => 
+        )
+
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+)
+Array
+(
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:35:26
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:36:22
+    [task_updated] => 2016-02-19 23:36:22
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:42:16
+    [task_updated] => 2016-02-19 23:42:16
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:42:18
+    [task_updated] => 2016-02-19 23:42:18
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:42:23
+    [task_updated] => 2016-02-19 23:42:23
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:42:23
+    [task_updated] => 2016-02-19 23:42:23
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:42:24
+    [task_updated] => 2016-02-19 23:42:24
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 1
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => 2016-02-19 23:43:00
+    [task_updated] => 2016-02-19 23:43:00
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-19 23:36:22
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:45:08
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-19 23:36:22
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:55:38
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-19 23:36:22
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:56:05
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-19 23:36:22
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:57:05
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 4
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-19 23:57:11
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:00:23
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-20 00:00:23
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:00:33
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:00:49
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:02:31
+)
+
+executing status updateArray
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-20 00:02:31
+)
+Array
+(
+)
+
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:03:02
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:05:17
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:05:47
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-20 00:05:47
+)
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:05:59
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+    [task_completed] => 2016-02-20 00:07:20
+    [task_updated] => 2016-02-20 00:07:20
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => 2016-02-20 00:07:20
+)
+Array
+(
+    [task_completed] => NULL
+    [task_updated] => 2016-02-20 00:07:24
+)
+
+Array
+(
+    [x] => upTask
+    [task_id] => 3
+    [status] => null
+)
+Array
+(
+    [task_completed] => 2016-02-20 00:07:30
+    [task_updated] => 2016-02-20 00:07:30
+)
+
+UPDATING task Array
+(
+    [x] => putTask
+)
+
+UPDATING task Array
+(
+)
+
+UPDATING task Array
+(
+)
+Array
+(
+    [task_name] => asdfasdf
+    [task_desc] => asdfsadf
+    [importance] => 2
+)
+
+INSERTING task Array
+(
+)
+Array
+(
+    [task_name] => asdfasdf
+    [task_desc] => asdfasdfdasf
+    [importance] => 3
+)
+

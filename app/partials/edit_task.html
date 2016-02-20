@@ -1,0 +1,95 @@
+﻿<style type="text/css">
+	.form-horizontal input.ng-invalid.ng-dirty {
+		border-color: #FA787E;
+	}
+
+	.form-horizontal input.ng-valid.ng-dirty {
+		border-color: #78FA89;
+	}
+</style>
+<div class="view">
+	<div class="container" ng-controller="EditController">
+		<div class="row">
+			<nav class= "navbar navbar-default" role= "navigation" >
+				<div class= "navbar-header" >
+					<a class= "navbar-brand" href= "#/tasks"><i class="glyphicon glyphicon-th-large"></i> Task List </a>
+					<a ng-show="task_id" class= "navbar-brand" href= "#/edit-task/0"><i class="glyphicon glyphicon-plus"></i> Create New Task </a>
+					<a ng-show="task_id" class= "navbar-brand pull-right"><i class="glyphicon glyphicon-edit"></i> Currently Editing Task: {{task_id}}</a>
+				</div>
+			</nav>
+			<header>
+				<h3>{{title}}</h3>
+			</header>
+			<br />
+			<div class="col-md-12">
+
+				<form role="form" name="myForm" class="form-horizontal">
+					<div class="row">
+						<div class= "form-group" ng-class="{error: myForm.task_name.$invalid}">
+							<label class= "col-md-2">Task Name </label>
+							<div class="col-md-4">
+								<input name="task_name" ng-model="task.task_name" type= "text" class= "form-control" placeholder="Title for task" required />
+								<span ng-show="myForm.task_name.$dirty && myForm.task_name.$invalid" class="help-inline">Task Name Required</span>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Task Description </label>
+							<div class="col-md-4">
+								<input name="task_desc" ng-model="task.task_desc" type= "text" class= "form-control" placeholder="Description" />
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Importance </label>
+							<div class="col-md-4">
+								<select style="width:100px;" ng-model="task.importance" name="importance" class= "form-control">
+									<option value="1">level 1</option>
+									<option value="2">level 2</option>
+									<option value="3">level 3</option>
+									<option value="4">level 4</option>
+									<option value="5">level 5</option>
+									<option value="6">level 6</option>
+									<option value="7">level 7</option>
+									<option value="8">level 8</option>
+									<option value="9">level 9</option>
+								</select>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Minutes before alarm </label>
+							<div class="col-md-4">
+								<input style="float:left; width:60px;" ng-model="task.alert_min" name="alert_min" type= "text" class= "form-control" placeholder= "15"/>
+								<span style="float:left; padding-left:10px;"> minutes</span>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Due Date </label>
+							<div class="col-md-4">
+								<input style="width:120px;" ng-model="task.date_due" name="date_due" type= "text" class= "form-control" placeholder= "YYYY-MM-DD"/>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Due Time </label>
+							<div class="col-md-4">
+								<input style="width:120px;" ng-model="task.time_due" name="time_due" type= "text" class= "form-control" placeholder= "hh:mm:ss"/>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2">Completed </label>
+							<div class="col-md-4">
+								<input style="width:210px;" ng-model="task.task_completed" name="task_completed" type= "text" class= "form-control" placeholder= "YYYY-MM-DD hh:mm:ss"/>
+							</div>
+						</div>
+						<div class= "form-group">
+							<label class= "col-md-2"></label>
+							<div class="col-md-4">
+								<a href="#/" class="btn">Cancel</a>
+								<button ng-click="saveTask(task);"  class="btn btn-primary">{{buttonText}}</button>
+								<button ng-click="deleteTask(task)" ng-show="task.task_id" class="btn btn-warning">Delete</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
