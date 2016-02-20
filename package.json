@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "moment": "^2.11.2",
+    "pikaday": "^1.4.0",
     "underscore": "^1.8.3"
   }
 }

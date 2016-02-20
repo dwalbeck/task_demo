@@ -840,3 +840,31 @@ UPDATING data Array
 )
 
 Success 
+Updating task Array
+(
+    [task_updated] => 2016-02-20 13:12:19
+    [alarm_set] => false
+    [category_id] => 
+    [task_name] => asdfasdf
+    [task_desc] => asdfsadf
+    [importance] => 2
+    [alert_min] => 
+    [date_due] => 
+    [time_due] => 
+    [task_completed] => 
+)
+
+Updating task Array
+(
+    [task_updated] => 2016-02-20 13:13:13
+    [alarm_set] => false
+    [category_id] => 2
+    [task_name] => Pull transmission
+    [task_desc] => Remove transmission from Jeep for last fix attempt
+    [importance] => 3
+    [alert_min] => 0
+    [date_due] => 
+    [time_due] => 
+    [task_completed] => 
+)
+

@@ -126,7 +126,7 @@ angular.module('myApp', ['ngRoute'])
 
 		$scope.saveTask = function (task) {
 			console.log('TASK VALUES', task);
-			//$location.path('/');
+			$location.path('/');
 			if (taskID <= 0) {
 				APIService.insertTask(task);
 			} else {

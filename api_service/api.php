@@ -108,14 +108,16 @@
 		private function postTask() {
 			if ($this->get_request_method() != "POST") { $this->response('', 406); }
 			$task = json_decode(file_get_contents("php://input"), true);
-			$field = array('category_id', 'task_name', 'task_desc', 'importance', 'alarm_set', 'alert_min', 'date_due', 'time_due', 'task_completed');
+			$field = array('category_id', 'task_name', 'task_desc', 'importance', 'alert_min', 'date_due', 'time_due', 'task_completed'); // 'alarm_set',
 			$data = array();
 
 			foreach ($field AS $fld) { // Grab all the field that are valid columns
 			   	if (array_key_exists($fld, $task)) {
+					if ($fld == 'alert_min' && ($task['date_due'] || $task['time_due'])) { $data['alarm_set'] = 'true'; }
 					$data[$fld] = $task[$fld];
 				}
 			}
+			if (($data['date_due'] || $data['time_due']) && !$data['alarm_set']) { $data['alarm_set'] = 'true'; }
 			if (!empty($task)) {
 				if (!$res = pg_insert($this->pgconn, 'task', $data)) { die('Failed to execute insert task'); }
 				$success = array('status' => "Success", "msg" => "Successfully created task.", "data" => $data);
@@ -131,16 +133,18 @@
 			$task = $this->_request;
 			if (!$task['task_id']) { $this->response('', 204); return; }
 
-			$field = array('category_id', 'task_name', 'task_desc', 'importance', 'alarm_set', 'alert_min', 'date_due', 'time_due', 'task_completed');
-			$up = array('task_updated' => date('Y-m-d H:i:s'));
+			$field = array('category_id', 'task_name', 'task_desc', 'importance', 'alert_min', 'date_due', 'time_due', 'task_completed'); // 'alarm_set',
+			$up = array('task_updated' => date('Y-m-d H:i:s'), 'alarm_set' => 'false');
 
 			foreach ($field AS $fld) { // Check the customer received. If blank insert blank into the array.
 				if (array_key_exists($fld, $task)) {
+					if ($fld == 'alert_min' && ($task['date_due'] || $task['time_due'])) { $up['alarm_set'] = 'true'; }
 					$up[$fld] = $task[$fld];
 				}
 			}
-			//$query = "UPDATE task SET $up WHERE task_id=".$task['task_id'];
+			if (($up['date_due'] || $up['time_due']) && !$up['alarm_set']) { $up['alarm_set'] = 'true'; };
 			if (count($up)) {
+				$this->writeLog('Updating task '.print_r($up, true));
 				if (!$res = pg_update($this->pgconn, 'task', $up, array('task_id' => $task['task_id']))) { die('Failed to update task'); }
 				$success = array('status' => "Success", "msg" => "Task ".$task['task_id']." successfully updated.", "data" => $task);
 				$this->response($this->json($success), 200);

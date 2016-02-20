@@ -7,6 +7,7 @@
 		border-color: #78FA89;
 	}
 </style>
+
 <div class="view">
 	<div class="container" ng-controller="EditController">
 		<div class="row">
@@ -64,19 +65,65 @@
 						<div class= "form-group">
 							<label class= "col-md-2">Due Date </label>
 							<div class="col-md-4">
-								<input style="width:120px;" ng-model="task.date_due" name="date_due" type= "text" class= "form-control" placeholder= "YYYY-MM-DD"/>
+								<div class='col-sm-6'>
+									<div class="form-group">
+										<div class='input-group date' id='taskdate'>
+											<input type='text' class="form-control" data-ng-model="task.date_due" />
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-time"></span>
+												</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class= "form-group">
 							<label class= "col-md-2">Due Time </label>
 							<div class="col-md-4">
-								<input style="width:120px;" ng-model="task.time_due" name="time_due" type= "text" class= "form-control" placeholder= "hh:mm:ss"/>
+								<div class='col-sm-6'>
+									<div class="form-group">
+										<div class='input-group date' id='tasktime'>
+											<input type='text' class="form-control" data-ng-model="task.time_due" />
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-time"></span>
+												</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class= "form-group">
 							<label class= "col-md-2">Completed </label>
 							<div class="col-md-4">
-								<input style="width:210px;" ng-model="task.task_completed" name="task_completed" type= "text" class= "form-control" placeholder= "YYYY-MM-DD hh:mm:ss"/>
+
+								<div class="container">
+									<div class="row">
+										<div class='col-sm-6'>
+											<div class="form-group">
+												<div class='input-group date' id='datetimepicker1'>
+													<input type='text' class="form-control" data-ng-model="task.task_completed" />
+													<span class="input-group-addon">
+														<span class="glyphicon glyphicon-calendar"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<script type="text/javascript">
+											$(function () {
+												$('#datetimepicker1').datetimepicker({
+													format: 'YYYY-MM-DD h:mm a',
+													defaultDate: moment().format('YYYY-MM-DD h:mm a')
+												});
+												$('#tasktime').datetimepicker({
+													format: 'LT'
+												});
+												$('#taskdate').datetimepicker({
+													format: 'L'
+												});
+											});
+										</script>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class= "form-group">
